@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 75px;
+  line-height: 1;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:blue;
+  background: cyan;
+
+}
+
+#header {
+  position: absolute;
+  
+  left: 0;
+  width: 100%;
+  color: cyan;
+ 
+  padding-top: 0px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  transition: 2s all ease;
+}
+
+.flex-item {
+  background: cyan;
+  border: 1pt solid black;
+  width: 10px;
+  transition: 0.1s all ease;
+}
+
+
+
+#input {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.drop-down{
+  gap: 10px;
+}
+
+.newArray{
+  height: 60px;
+}
+
+#arr_sz{
+  cursor: pointer;
+}
+
+#speed_input{
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+        h1 {
+          font-size: 1.4rem;
+          padding: 0.8rem;
+        }
+
+        .selectors {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .drop-down {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .drop-down button {
+          width: 100%;
+        }
+
+        #input {
+          width: 100%;
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        body {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        .newArray {
+          width: 100%;
+        }
+
+        .flex-container {
+          height: 150px;
+        }
+      }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizer For Sorting</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="text-center text-start fw-light p-3 " >Visualizer For Sorting Algorithms</h1>
+    <div id="header">
+        
+      <nav class="navbar bg-primary" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class=" selector-all  container textcenter">
+          <div class="col" id="newArray ">
+            <button
+              type="button"
+              class="btn btn-outline-light  align-start newArray"
+            >
+              Generate New Array
+            </button>
+          </div>
+          <div class="selectors row ">
+            <div class="sliders col" id="input">
+              <label for="size" class="form-label">Size</label>
+              <input
+                class="size"
+                id="arr_sz"
+                type="range"
+                min="5"
+                max="60"
+                step="1"
+                value="60"
+              />
+              <label for="speed" class="form-label">Speed</label>
+              <input
+                class="speed"
+                id="speed_input"
+                type="range"
+                min="20"
+                max="300"
+                stepDown="10"
+                value="60"
+              />
+            </div>
+            <div class = "drop-down col row">
+              <button type="button" class="btn btn-light Bubble-Sort col">Bubble Sort</button>
+              <button type="button" class="btn btn-light Merge-Sort col">Merge Sort</button>
+              <button type="button" class="btn btn-light Quick-Sort col">Quick Sort</button>
+              <button type="button" class="btn btn-light Insertion-Sort col">Insertion Sort</button>
+              <button type="button" class="btn btn-light Selection-Sort col">Selection Sort</button>
+              <button type="button" class="btn btn-light Reset col">Reset</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="p-3 mb-2 body">
+        <div id="bars" class="flex-container"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="bubbleSort.js"></script>
+    <script src="insertionSort.js"></script>
+    <script src="mergeSort.js"></script>
+    <script src="quickSort.js"></script>
+    <script src="selectionSort.js"></script>
+  </body>
+</html>
