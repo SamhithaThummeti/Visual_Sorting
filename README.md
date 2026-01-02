@@ -17,6 +17,8 @@ An interactive web application that visualizes popular sorting algorithms, helpi
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
+- Merge Sort
+- Quick Sort
   
 
 ## 📌 Project Highlights
